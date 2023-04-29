@@ -3,49 +3,197 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Template Page</title>
-    <link rel="icon" type="image/png" href="../MR_MIND_LOGO.png">
-    <link rel="stylesheet" href="" crossorigin="anonymous">
-    <!-- <nav>
-  <ul>
-<li><a href="#">OverView</a></li>
-<li><a href="#">History</a></li>
-<li><a href="#">Development</a></li>
-  </ul>
-</nav> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDM</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/logo/Favicon.png" type="image/x-icon">
+
+    <!-- fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
 </head>
 
 <body>
+    <div id="preloadder">
+
+    </div>
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="images/logo/logo.png" alt="">
+        </div>
+        <div class="menu-hamburger" id="toggle">
+
+            <h1>Web Data Mining F22</h1>
+        </div>
+
+        <nav class="navbar" id="navbar">
+            <ul class="navbar-list" id="primary-navbar" data-visiable="false">
+
+                <li><a href="#banner" class="navbar-links">Home</a></li>
+                <li><a href="#features" class="navbar-links">Models Comparison</a></li>
+                <li><a href="#courses" class="navbar-links">Comparison Plot</a></li>
+                <!--<li><a href="#contact" class="navbar-links">Contact</a></li> -->
+                <!-- <li><a href="#courses" class="btn btn-get-courses"><span>Get Courses</span></a></li> -->
+            </ul>
+        </nav>
+    </header>
     <main>
-        <p>
-            This is my main code
-        </p>
-        <figure>
-            <img src="../other_useful_tags.png" alt="img" width="50%">
-            <figcaption>
-                just an image
-            </figcaption>
-        </figure>
-        <i class="fa-solid "></i>
-        <i class="fa-solid fa-xs"></i>
-        <i class="fa-solid fa-md"></i>
-        <i class="fa-solid fa-lg"></i>
-        <i class="fa-solid fa-2x"></i>
-        <i class="fa-solid fa-3x"></i>
-        <a href="http://www.twitter.com" aria-label="Twitter">
-            <i class="fab fa-twitter fa-5x"></i>
-        </a>
-        <!--absolute -->
-        <a href="https://www.google.com">Absolute </a>
-        <!--Relative-->
-        <a href="new.html">Relative 1</a>
-        <!-- Relative different location in the same file //Internal -->
-        <a href="#">Relative 2</a>
+
+        <!-- --------------------------------
+            banner section 
+        -------------------------------- -->
+        <section class="banner column-4" id="banner">
+            <div class="text-area">
+                <div class="text-part">
+                    <h1>Web Data Mining <span>F22</span> </h1>
+                    <p>
+                        عدي كريم &nbsp; &nbsp;&nbsp; odae_194385
+                        </br>
+                        </br>
+                        علاء دريباتي &nbsp; &nbsp;&nbsp; alaa_198829
+
+                    </p>
+                </div>
+                <!-- <div class="button-group">
+                    <a href="#courses" class="btn btn-start-course">Start A Course</a>
+                </div> -->
+            </div>
+            <!-- <div class="image-area">
+                <img src="images/causal.png" alt="">
+                <div class="circle"></div>
+                <a href="#features" class="info info-expert">
+                    <ion-icon name="people-circle-outline"></ion-icon><span>Profesional
+                        Expert</span>
+                </a>
+                <a href="#features" class="info info-live">
+                    <ion-icon name="videocam-outline"></ion-icon><span>Live Class</span>
+                </a>
+                <a href="#features" class="info info-chat">
+                    <ion-icon name="chatbox-ellipses-outline"></ion-icon><span>Doubt Clearing Class</span>
+                </a>
+            </div> -->
+
+        </section>
+        <!-- -------------------------------- -->
+        <!-- features section  -->
+        <!-- -------------------------------- -->
+
+        <section class="features" id="features">
+            <div class="custom-shape-divider-bottom">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+            <div class="main-container column-2">
+                <div class="text-part">
+                    <h1>Models Comparison</h1>
+                    <p> Comparison between Logistic regression , decision tree and Naive Bayes Models, Using Metrices : precision , recall and F1 score.
+                    </p>
+                </div>
+                <div class="image-part">
+                    <div class="table-wrapper">
+                        <table class="fl-table">
+                            <thead>
+                                <tr>
+                                    <th>Model</th>
+                                    <th>Precision</th>
+                                    <th>Recall</th>
+                                    <th>F1 Score</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Decision Tree Regressor</td>
+                                    <td>0.31</td>
+                                    <td>0.31</td>
+                                    <td>0.31</td>
+                                </tr>
+                                <tr>
+                                    <td>Naive Bayes</td>
+                                    <td>0.06</td>
+                                    <td>0.06</td>
+                                    <td>0.06</td>
+                                </tr>
+                                <tr>
+                                    <td>Logistic Regression</td>
+                                    <td>0.05</td>
+                                    <td>0.05</td>
+                                    <td>0.05</td>
+                                </tr>
+
+                                <tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------------------------- -->
+        <!-- courses  -->
+        <!-- -------------------------------- -->
+
+        <section id="courses" class="courses">
+            <div class="text-part">
+                <h1>Comparison Plot</h1>
+
+                <hr class="line">
+            </div>
+            <div class="main-container">
+                <div class="image-part">
+                    <img src="images/plot.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="var(--secondarycolor)" fill-opacity="1" d="M0,192L1440,288L1440,0L0,0Z"></path>
+        </svg>
+
+        <!-- -------------------------------- -->
+        <!-- expert section  -->
+        <!-- -------------------------------- -->
+
+
+
+        <!-- -------------------------------- -->
+        <!-- subscribe -->
+        <div class="subscribe">
+            <!-- <div class="text">
+                <h1>Subscribe</h1>
+                <p>To Our Email Newsletter And Expert Blog</p>
+            </div>
+            <div class="input">
+                <input type="email" placeholder="Emili@gmail.com" name="subscribe_email" class="input_email">
+                <button type="submit" class="btn">Submit</button>
+            </div> -->
+        </div>
+
     </main>
-    <footer>
-        &copy; 2022 by Eng Oday <br>
-        <a href="#">Introduction to HTML5</a>
+    <footer class="footer" id="footer">
+        <div class="footer_main">
+            <div class="logo">
+                <img src="images/logo/logo.png" alt=" Mind logo">
+                <p>الجامعة الافتراضية السورية <br> ماجستير علوم الويب <br>مقرر التنقيب عن المعطيات WDM</p>
+            </div>
+
+        </div>
+
     </footer>
+    <script src="script.js" defer></script>
 </body>
 
 </html>
